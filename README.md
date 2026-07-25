@@ -99,6 +99,6 @@ Languages spoken: Catalan, Spanish, English, Japanese
 - `assets/logo.svg` — site logo (not used on this screen, included for reference/consistency with rest of portfolio)
 
 ## Files
-- `CV.html` — entry point, renders the `CVB` component
-- `cv-layouts.jsx` — the CV component (`CVB`, plus two alternate unused layout drafts `CVA`/`CVC` for reference — only `CVB` was selected as final)
-- `portfolio-shared.jsx` — shared design tokens (`INK`, `PAPER`, `VIOLET`) and shared components (`Navbar`, `PageMark`, etc.) used across the wider portfolio site
+Implemented as a Vite + React app in `src/` (`src/components/CV.jsx`/`CV.css`, `src/data/resume.js`, `src/tokens.js`). The original in-browser Babel/HTML prototype (`CV.html`, `cv-layouts.jsx`, `portfolio-shared.jsx`) has been removed now that the real implementation exists.
+
+The page is scaled to fit a DIN A4 sheet (210×297mm) — see `.cv-sheet`/`.cv-page` in `src/components/CV.css`. Print/PDF export targets A4 via `@page { size: A4 }`.

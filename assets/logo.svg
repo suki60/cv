@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Francesc Altes — clave de FA (misprint)</title>
+  
+  <g fill="#c3b5fd">
+    <path d="M9 11 H51 V49 L39 61 V23 H9 Z"></path>
+    <rect x="55" y="16" width="9" height="9"></rect>
+    <rect x="55" y="33" width="9" height="9"></rect>
+  </g>
+  
+  <g fill="#0a0a0a">
+    <path d="M6 8 H48 V46 L36 58 V20 H6 Z"></path>
+    <rect x="52" y="13" width="9" height="9"></rect>
+    <rect x="52" y="30" width="9" height="9"></rect>
+  </g>
+</svg>

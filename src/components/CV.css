@@ -1,0 +1,207 @@
+/* Values mirror src/tokens.js (INK / PAPER / VIOLET) */
+
+/* The design was authored at a fixed 900px canvas (letter proportions). To fit a
+   real DIN A4 sheet (210mm wide) it's scaled down as a whole, preserving every
+   locked spacing/typography value from the handoff rather than re-tuning each one. */
+:root {
+  --cv-design-width: 900px;
+  --cv-scale: 0.881890; /* 210mm / 900px at the standard 96px-per-inch CSS reference */
+}
+
+.cv-sheet {
+  width: 210mm;
+  aspect-ratio: 210 / 297;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cv-page {
+  width: var(--cv-design-width);
+  transform: scale(var(--cv-scale));
+  transform-origin: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  color: #0a0a0a;
+  box-sizing: border-box;
+  border: 2px solid #0a0a0a;
+}
+
+.cv-body {
+  display: flex;
+}
+
+.cv-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  background: #c3b5fd;
+  border-right: 2px solid #0a0a0a;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+.cv-photo-wrap {
+  position: relative;
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.cv-photo-halo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #c3b5fd;
+}
+
+.cv-photo {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #0a0a0a;
+  object-fit: cover;
+}
+
+.cv-name {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0 0 6px;
+  text-transform: lowercase;
+}
+
+.cv-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 32px;
+}
+
+.cv-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #0a0a0a;
+  opacity: 0.55;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cv-contact {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 28px;
+}
+
+.cv-skill-group {
+  margin-bottom: 12px;
+}
+
+.cv-skill-cat {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.cv-skill-items {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cv-edu-item {
+  margin-bottom: 12px;
+}
+
+.cv-edu-title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: lowercase;
+}
+
+.cv-edu-meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.cv-langs {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+}
+
+.cv-main {
+  flex: 1;
+  padding: 40px 36px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.cv-profile {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0 0 28px;
+}
+
+.cv-exp-item {
+  padding: 14px 0;
+  border-top: none;
+}
+
+.cv-exp-item--divided {
+  border-top: 1px solid rgba(10, 10, 10, 0.15);
+}
+
+.cv-exp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cv-exp-role {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.cv-exp-time {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.cv-exp-meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  opacity: 0.55;
+  margin-bottom: 6px;
+}
+
+.cv-exp-bullet {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

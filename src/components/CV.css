@@ -19,6 +19,7 @@
 
 .cv-page {
   width: var(--cv-design-width);
+  aspect-ratio: 210 / 297;
   transform: scale(var(--cv-scale));
   transform-origin: top left;
   position: absolute;
@@ -32,6 +33,7 @@
 
 .cv-body {
   display: flex;
+  height: 100%;
 }
 
 .cv-sidebar {

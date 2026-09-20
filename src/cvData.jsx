@@ -135,9 +135,9 @@ export const experience = [
     loc: 'barcelona',
     time: '2024 - 2025',
     bullets: [
-      'owned vendor portal end-to-end (react router v7 / ts)',
-      'built partner portal from scratch, cutting release cycle from weeks to days (vercel / github actions / cypress)',
-      'led app router, server components and actions migrations, improving page load times (next.js)',
+      'owned ci/cd (github actions), deployments, and aws infra (cognito, secrets manager) — on-call for incident response, working closely with devops',
+      'helped onboard and integrate new developers into the team, providing hands-on support whenever needed',
+      'led the migration to next.js app router, server components and server actions, significantly improving page load times',
     ],
   },
   {
@@ -146,9 +146,9 @@ export const experience = [
     loc: 'barcelona',
     time: '2022 - 2024',
     bullets: [
-      'maintained and scaled capterra.com (next.js / ts)',
-      'migrated microfrontends into a unified monorepo, cutting build/deploy overhead (aws -> vercel)',
-      'set up observability integrations, reducing incident detection time (datadog / newrelic)',
+      'led the rollout of my hackathon-winning project — converting getapp.com filters from links to spa — driving drastic performance and conversion gains',
+      'consolidated capterra.com microfrontends into a single monorepo, eliminating duplicated infra and deploy overhead (aws -> vercel)',
+      'owned observability and analytics setup (datadog/sentry), partnering closely with data analysts on gtm/ga event tracking',
     ],
   },
   {
@@ -157,8 +157,8 @@ export const experience = [
     loc: 'barcelona',
     time: '2018 - 2022',
     bullets: [
-      'maintained getapp.com (sintra / ruby)',
-      'migrated getapp frontend from jquery to react, improving maintainability',
+      'first official frontend engineer at the company — the team later grew to 3 to migrate getapp.com from jquery to react',
+      'led a successful initiative to build a library embedding react into ruby templates — deep webpack/react work for single-instance loading and no repeated components',
       'built and managed sem landing pages driving +10m eur/year revenue',
     ],
   },
@@ -169,8 +169,8 @@ export const experience = [
     time: '2018',
     bullets: [
       'completed 6 months of intensive tech training at the company',
-      'shipped apps to consolidate skills (ruby / mysql / jquery)',
-      'offered permanent job as 1 of 3 successful candidates (out of 6)',
+      'contributed full-stack to getapp.com: search indexing (solr/mysql), ruby, jquery',
+      'offered a permanent contract, one of 3 kept from 6 trainees',
     ],
   },
   {
@@ -180,7 +180,7 @@ export const experience = [
     time: '2017',
     bullets: [
       'designed a specialized drone capable of taking soil samples',
-      'modeled structure and internal mechanisms (solidworks)',
+      'modeled structure and internal mechanisms with solidworks',
       'won 2nd place out of 30 projects at demola spring 2017',
     ],
   },

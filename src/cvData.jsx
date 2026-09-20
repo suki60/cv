@@ -47,7 +47,7 @@ export const contact = [
     filled: false,
   },
   {
-    label: '+34 600 000 000',
+    label: '+34 658 574 658',
     icon: (
       <path
         d="M4 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4c0 1.1-.9 2-2 2C9.5 20 3 13.5 3 5c0-1.1.9-2 2-2z"
@@ -61,52 +61,31 @@ export const contact = [
 export const skills = [
   {
     cat: 'languages',
-    items: ['typescript', 'javascript', 'go', 'node', 'graphql', 'ruby'],
+    items: ['js, ts', 'node', 'go', 'ruby', 'java'],
   },
   {
     cat: 'libraries & frameworks',
-    items: [
-      'react',
-      'next.js',
-      'tailwind',
-      'react query',
-      'zustand',
-      'router v7',
-    ],
+    items: ['react', 'next.js', 'router v7', 'tanstack', 'zod', 'zustand'],
   },
   {
     cat: 'testing & tooling',
-    items: [
-      'vitest',
-      'playwright',
-      'testing library',
-      'git',
-      'vite',
-      'webpack',
-    ],
+    items: ['vite', 'vitest', 'testing library', 'playwright', 'webpack', 'turbopack'],
   },
   {
     cat: 'cloud & devops',
-    items: [
-      'aws',
-      'vercel',
-      'ci/cd pipelines',
-      'kubernetes',
-      'terraform',
-      'datadog',
-    ],
+    items: ['aws', 'vercel', 'github actions', 'datadog', 'terraform', 'kubernetes'],
   },
   {
     cat: 'ai',
-    items: ['claude code', 'llm apis', 'prompt eng.', 'rag', 'agents', 'mcp'],
+    items: ['claude code', 'openai agents sdk', 'mcp', 'tool calling', 'rag', 'evals'],
   },
   {
     cat: 'architecture',
     items: [
       'system design',
-      'scalable web apps',
+      'distributed systems',
       'microservices',
-      'code review',
+      'monorepo',
       'design patterns',
       'a11y',
     ],

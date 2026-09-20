@@ -119,14 +119,14 @@ export const profile =
 
 export const experience = [
   {
-    role: 'sabbatical year — study, build, ride',
-    org: 'self-directed',
-    loc: 'barcelona / japan',
+    role: 'sabbatical year',
+    org: 'independent',
+    loc: 'barcelona & japan',
     time: '2026',
     bullets: [
-      '530+ hours across 14 master.dev learning paths, 12 at 100%: ai engineering, coding with ai, code architecture, cloud & devops, react & next.js, typescript, node.js',
-      'built projects to put the studies into practice: an ai agent with tool calling, a rag-powered docs assistant and an agentic pr reviewer',
-      'crossed all of japan by bicycle — long-route planning and self-reliance, far from help',
+      '560+ hours, 14 master.dev learning paths completed: computer science, ai engineering, coding with ai, code architecture, cloud & devops, design to code...',
+      'built an ai agent that turns natural-language prompts into diagrams (excalidraw) — tool calling, chat, rag retrieval, and an eval harness for regression testing',
+      'cycled 3,200+ km across japan, solo, self-planned route',
     ],
   },
   {

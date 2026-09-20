@@ -97,7 +97,7 @@ export const education = [
     title: 'java web developer bootcamp',
     org: 'ubiqum',
     time: '2017',
-    desc: 'intensive full-time program in java, sql and oop fundamentals',
+    desc: 'learned the fundamentals of web dev (html, css, js) with java as backend',
   },
   {
     title: 'mechanical engineering degree',

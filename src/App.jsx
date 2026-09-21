@@ -102,8 +102,8 @@ function App() {
         </aside>
 
         <main className="flex-1 pt-9 px-8 pb-7 box-border min-w-0">
-          <div className="h-[100px] mb-5 flex flex-col items-center justify-center text-center">
-            <h1 className="font-sans font-black text-[48px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
+          <div className="h-[90px] mb-4 flex flex-col items-center justify-center text-center">
+            <h1 className="font-sans font-black text-[40px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
               francesc altes
             </h1>
             <div className="font-mono text-[13px] uppercase tracking-[0.06em]">
@@ -112,27 +112,27 @@ function App() {
           </div>
 
           <SectionLabel>profile</SectionLabel>
-          <p className="font-sans text-xs leading-[1.5] mb-4">{profile}</p>
+          <p className="font-sans text-xs leading-[1.4] mb-3">{profile}</p>
 
           <SectionLabel className="mb-[2px]">experience</SectionLabel>
           {experience.map((e, i) => (
             <div
-              className={`py-[9px] ${i === 0 ? 'border-t-0' : 'border-t border-ink/15'}`}
+              className={`py-[6px] ${i === 0 ? 'border-t-0' : 'border-t border-ink/15'}`}
               key={e.role + e.time}
             >
               <div className="flex justify-between items-baseline">
-                <div className="font-sans font-bold text-[13px] lowercase">
+                <div className="font-sans font-bold text-[12.5px] lowercase">
                   {e.role}
                 </div>
-                <div className="font-mono text-[10px] opacity-50">{e.time}</div>
+                <div className="font-mono text-[9.5px] opacity-50">{e.time}</div>
               </div>
-              <div className="font-mono text-[10px] opacity-55 mb-1">
+              <div className="font-mono text-[9.5px] opacity-55 mb-[3px]">
                 {e.org} / {e.loc}
               </div>
               {e.bullets.map((b) => (
-                <div className="flex gap-[7px] mb-[2px]" key={b}>
-                  <div className="shrink-0 w-1 h-1 bg-ink mt-[5px]" />
-                  <div className="font-sans text-[11.5px] leading-[1.45] opacity-85">
+                <div className="flex gap-[6px] mb-[1px]" key={b}>
+                  <div className="shrink-0 w-1 h-1 bg-ink mt-[4px]" />
+                  <div className="font-sans text-[11px] leading-[1.35] opacity-85">
                     {b}
                   </div>
                 </div>

@@ -102,7 +102,7 @@ function App() {
         </aside>
 
         <main className="flex-1 pt-9 px-8 pb-7 box-border min-w-0">
-          <div className="h-[90px] mb-4 flex flex-col items-center justify-center text-center">
+          <div className="h-[120px] mb-6 flex flex-col items-center justify-center text-center">
             <h1 className="font-sans font-black text-[40px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
               francesc altes
             </h1>
@@ -112,7 +112,7 @@ function App() {
           </div>
 
           <SectionLabel>profile</SectionLabel>
-          <p className="font-sans text-xs leading-[1.4] mb-3">{profile}</p>
+          <p className="font-sans text-xs leading-[1.4] mb-5">{profile}</p>
 
           <SectionLabel className="mb-[2px]">experience</SectionLabel>
           {experience.map((e, i) => (

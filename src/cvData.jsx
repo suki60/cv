@@ -77,7 +77,7 @@ export const skills = [
   },
   {
     cat: 'ai',
-    items: ['claude code', 'openai agents sdk', 'mcp', 'tool calling', 'rag', 'evals'],
+    items: ['claude code', 'openai agents sdk', 'agent harness', 'mcp', 'rag', 'evals'],
   },
   {
     cat: 'architecture',
@@ -124,8 +124,8 @@ export const experience = [
     loc: 'barcelona & japan',
     time: '2026',
     bullets: [
-      '560+ hours, 14 master.dev learning paths completed: computer science, ai engineering, coding with ai, code architecture, cloud & devops, design to code...',
       'built an ai agent that turns natural-language prompts into diagrams (excalidraw) — tool calling, chat, rag retrieval, and an eval harness for regression testing',
+      '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
       'cycled 3,200+ km across japan, solo, self-planned route',
     ],
   },
@@ -135,9 +135,9 @@ export const experience = [
     loc: 'barcelona',
     time: '2024 - 2025',
     bullets: [
-      'owned ci/cd (github actions), deployments, and aws infra (cognito, secrets manager) — on-call for incident response, working closely with devops',
-      'helped onboard and integrate new developers into the team, providing hands-on support whenever needed',
-      'led the migration to next.js app router, server components and server actions, significantly improving page load times',
+      'architected and led the next.js app router migration (server components, server actions, caching strategy), setting the technical standard for future work',
+      'owned ci/cd and deployment strategy (github actions, vercel), including auth (cognito) and e2e coverage (playwright) — on-call for incident response',
+      'onboarded and mentored 6-8 engineers into the team, providing hands-on support and technical guidance',
     ],
   },
   {
@@ -152,18 +152,18 @@ export const experience = [
     ],
   },
   {
-    role: 'associate software engineer',
+    role: 'junior software engineer',
     org: 'gartner',
     loc: 'barcelona',
     time: '2018 - 2022',
     bullets: [
-      'first official frontend engineer at the company — the team later grew to 3 to migrate getapp.com from jquery to react',
-      'led a successful initiative to build a library embedding react into ruby templates — deep webpack/react work for single-instance loading and no repeated components',
       'built and managed sem landing pages driving +10m eur/year revenue',
+      'led a successful initiative to build a library embedding react into ruby templates — deep webpack/react work for single-instance loading and no repeated components',
+      'first official frontend engineer at the company — the team later grew to 3 to migrate getapp.com from jquery to react',
     ],
   },
   {
-    role: 'junior software engineer',
+    role: 'trainee software engineer',
     org: 'gartner',
     loc: 'barcelona',
     time: '2018',

@@ -36,7 +36,7 @@ function ContactIcon({ icon, filled }) {
 
 function App() {
   return (
-    <div className="min-h-svh overflow-hidden p-4 bg-canvas print:p-0 print:bg-white">
+    <div className="p-4 bg-canvas print:p-0 print:bg-white">
       <div className="cv-scale-wrapper">
         <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border flex overflow-hidden font-sans print:border-0">
           <aside className="w-[260px] shrink-0 bg-lavender border-r-2 border-ink py-9 px-6 box-border">

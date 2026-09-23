@@ -15,6 +15,17 @@
   --page-scale: min(1, calc((100vw - var(--page-gutter)) / var(--page-width)));
 }
 
+@media (max-width: 820px) {
+  :root {
+    --page-vertical-reserve: 96px;
+    --page-scale: min(
+      1,
+      calc((100vw - var(--page-gutter)) / var(--page-width)),
+      calc((100svh - var(--page-vertical-reserve)) / var(--page-height))
+    );
+  }
+}
+
 .cv-scale-wrapper {
   width: calc(var(--page-width) * var(--page-scale));
   height: calc(var(--page-height) * var(--page-scale));

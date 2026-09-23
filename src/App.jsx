@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="min-h-svh overflow-hidden p-4 bg-canvas print:p-0 print:bg-white">
       <div className="cv-scale-wrapper">
-        <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border flex overflow-hidden font-sans">
+        <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border flex overflow-hidden font-sans print:border-0">
           <aside className="w-[260px] shrink-0 bg-lavender border-r-2 border-ink py-9 px-6 box-border">
             <div className="relative w-[120px] mx-auto mb-6">
               <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
@@ -146,13 +146,13 @@ function App() {
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={() => window.print()}
-        className="block mx-auto mt-4 bg-ink text-white font-mono text-[11px] uppercase tracking-[0.08em] px-4 py-2 hover:opacity-80 cursor-pointer print:hidden"
+      <a
+        href={`${import.meta.env.BASE_URL}francesc-altes-cv.pdf`}
+        download
+        className="block w-max mx-auto mt-4 bg-ink text-white font-mono text-[11px] uppercase tracking-[0.08em] px-4 py-2 hover:opacity-80 cursor-pointer print:hidden"
       >
         download pdf
-      </button>
+      </a>
     </div>
   );
 }

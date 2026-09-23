@@ -49,7 +49,11 @@ try {
   await page.goto(url, { waitUntil: 'networkidle' });
   await page.pdf({
     path: OUT_FILE,
-    format: 'A4',
+    // Explicit mm width/height instead of `format: 'A4'`: Playwright's
+    // built-in A4 constant is a hair larger than true A4, which leaves a
+    // sub-mm gap against the card's CSS (sized to exact 210mm/297mm).
+    width: '210mm',
+    height: '297mm',
     printBackground: true,
     margin: { top: '0', right: '0', bottom: '0', left: '0' },
   });

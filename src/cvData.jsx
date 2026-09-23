@@ -60,34 +60,41 @@ export const contact = [
 
 export const skills = [
   {
-    cat: 'languages',
+    cat: 'languages & runtimes',
     items: ['js, ts', 'node', 'go', 'ruby', 'java'],
   },
   {
     cat: 'libraries & frameworks',
-    items: ['react', 'next.js', 'router v7', 'tanstack', 'zod', 'zustand'],
+    items: ['react', 'next.js', 'router v7', 'tailwind', 'zod', 'zustand'],
   },
   {
     cat: 'testing & tooling',
-    items: ['vite', 'vitest', 'testing library', 'playwright', 'webpack', 'turbopack'],
+    items: [
+      'vitest',
+      'testing library',
+      'playwright',
+      'vite',
+      'turborepo',
+      'biome',
+    ],
+  },
+  {
+    cat: 'data & databases',
+    items: ['postgres', 'pgvector', 'redis', 'supabase', 'drizzle', 'graphql'],
   },
   {
     cat: 'cloud & devops',
-    items: ['aws', 'vercel', 'github actions', 'datadog', 'terraform', 'kubernetes'],
+    items: ['aws', 'vercel', 'github actions', 'datadog', 'sentry', 'docker'],
   },
   {
-    cat: 'ai',
-    items: ['claude code', 'openai agents sdk', 'agent harness', 'mcp', 'rag', 'evals'],
-  },
-  {
-    cat: 'architecture',
+    cat: 'ai & agents',
     items: [
-      'system design',
-      'distributed systems',
-      'microservices',
-      'monorepo',
-      'design patterns',
-      'a11y',
+      'claude code',
+      'openai agents sdk',
+      'agent harness',
+      'mcp',
+      'rag',
+      'evals',
     ],
   },
 ];
@@ -124,8 +131,8 @@ export const experience = [
     loc: 'barcelona & japan',
     time: '2026',
     bullets: [
-      'built an ai agent that turns natural-language prompts into diagrams (excalidraw) — tool calling, chat, rag retrieval, and an eval harness for regression testing',
       '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
+      'experimented with building ai agents — tool calling, rag retrieval, eval harnesses — to put the studies into practice',
       'cycled 3,200+ km across japan, solo, self-planned route',
     ],
   },

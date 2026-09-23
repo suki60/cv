@@ -44,7 +44,7 @@ function App() {
               <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
               <img
                 className="relative block w-[120px] h-[120px] border-[3px] border-ink object-cover"
-                src="/assets/profile.jpg"
+                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                 alt="francesc altes"
               />
             </div>

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html,
+body {
+  background: var(--color-canvas);
+}
+
 @theme {
   --font-sans: "Inter", sans-serif;
   --font-mono: "Space Mono", monospace;

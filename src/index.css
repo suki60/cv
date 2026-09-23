@@ -7,3 +7,42 @@
   --color-lavender: #c3b5fd;
   --color-canvas: #e9e9e9;
 }
+
+:root {
+  --page-width: 794px;
+  --page-height: 1123px;
+  --page-gutter: 32px;
+  --page-scale: min(1, calc((100vw - var(--page-gutter)) / var(--page-width)));
+}
+
+.cv-scale-wrapper {
+  width: calc(var(--page-width) * var(--page-scale));
+  height: calc(var(--page-height) * var(--page-scale));
+  margin: 0 auto;
+}
+
+.cv-page {
+  transform: scale(var(--page-scale));
+  transform-origin: top left;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-scale-wrapper {
+    width: 794px !important;
+    height: 1123px !important;
+  }
+
+  .cv-page {
+    transform: none !important;
+  }
+}

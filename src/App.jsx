@@ -5,7 +5,7 @@ import {
   languages,
   profile,
   skills,
-} from './cvData';
+} from './data';
 
 function SectionLabel({ children, className = 'mb-2' }) {
   return (
@@ -44,7 +44,7 @@ function App() {
               <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
               <img
                 className="relative block w-[120px] h-[120px] border-[3px] border-ink object-cover"
-                src="/assets/fa-square.jpg"
+                src="/assets/profile.jpg"
                 alt="francesc altes"
               />
             </div>

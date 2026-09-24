@@ -39,7 +39,7 @@ function App() {
     <div className="p-4 bg-canvas print:p-0 print:bg-white">
       <div className="cv-scale-wrapper">
         <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border flex overflow-hidden font-sans print:border-0">
-          <aside className="w-[260px] shrink-0 bg-lavender border-r-2 border-ink py-9 px-6 box-border">
+          <aside className="w-[260px] shrink-0 bg-lavender border-r-2 border-ink pt-9 pb-9 px-6 box-border">
             <div className="relative w-[120px] mx-auto mb-6">
               <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
               <img
@@ -50,7 +50,7 @@ function App() {
             </div>
 
             <SectionLabel>contact</SectionLabel>
-            <div className="font-mono text-[11px] leading-[1.5] mb-5 flex flex-col gap-2">
+            <div className="font-mono text-[11px] leading-[1.5] mb-7 flex flex-col gap-2">
               {contact.map((c) => (
                 <div className="flex items-center gap-2" key={c.label}>
                   <ContactIcon icon={c.icon} filled={c.filled} />
@@ -61,7 +61,7 @@ function App() {
 
             <SectionLabel>skills</SectionLabel>
             {skills.map((s) => (
-              <div className="mb-[10px]" key={s.cat}>
+              <div className="mb-[14px]" key={s.cat}>
                 <div className="font-mono text-[9px] opacity-60 uppercase">
                   {s.cat}
                 </div>
@@ -71,9 +71,9 @@ function App() {
               </div>
             ))}
 
-            <SectionLabel className="mt-[18px] mb-2">education</SectionLabel>
+            <SectionLabel className="mt-6 mb-2">education</SectionLabel>
             {education.map((ed) => (
-              <div className="mb-[10px]" key={ed.title}>
+              <div className="mb-[14px]" key={ed.title}>
                 <div className="font-sans font-bold text-xs lowercase">
                   {ed.title}
                 </div>
@@ -86,7 +86,7 @@ function App() {
               </div>
             ))}
 
-            <SectionLabel className="mt-[18px] mb-2">languages</SectionLabel>
+            <SectionLabel className="mt-6 mb-2">languages</SectionLabel>
             <div className="flex flex-col gap-[6px]">
               {languages.map((l) => (
                 <div

@@ -61,7 +61,7 @@ export const contact = [
 export const skills = [
   {
     cat: 'languages & runtimes',
-    items: ['js, ts', 'node', 'go', 'ruby', 'java'],
+    items: ['js, ts', 'node', 'go', 'ruby', 'python'],
   },
   {
     cat: 'libraries & frameworks',

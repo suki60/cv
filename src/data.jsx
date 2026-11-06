@@ -131,8 +131,8 @@ export const experience = [
     loc: 'barcelona & japan',
     time: '2026',
     bullets: [
+      'built offwik, a pwa that turns the phone into an offline rag agent over 238k wikipedia articles: webgpu llm and vector search, no server. plus other ai agents',
       '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
-      'experimented with building ai agents — tool calling, rag retrieval, eval harnesses — to put the studies into practice',
       'cycled 3,200+ km across japan, solo, self-planned route',
     ],
   },

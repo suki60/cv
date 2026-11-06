@@ -36,11 +36,13 @@ far from their dates, companies and bullets.
 
 ## Phase 3 — Contact block (`src/data.jsx`)
 
-- [ ] 7. `francesc-altes` → `linkedin.com/in/francesc-altes`
-- [ ] 8. `suki60` → `github.com/suki60`
-- [ ] 9. `barcelona` → `barcelona, spain`
-- [ ] 10. Website: write it as a full domain or URL (`fran-altes.com` is fine;
-      optionally add the `https://` prefix).
+- [x] 7–8. LinkedIn and GitHub keep the short labels (`francesc-altes`,
+      `suki60`); the full URL wouldn't fit on one line. Every contact row is
+      now a link (`href` in `contact`), so the PDF has clickable link
+      annotations with the full URLs. Text-only readers still see the short
+      label.
+- [x] 9. `barcelona` → `barcelona, spain`
+- [x] 10. Website: `fran-altes.com` stays, linked to `https://fran-altes.com`.
 
 ## Phase 4 — Keywords (`src/data.jsx` skills)
 

@@ -9,6 +9,9 @@ const PDF_FILE = new URL('../public/francesc-altes-cv.pdf', import.meta.url)
 
 const TERMS = [
   'francesc altes',
+  'fran.altes@gmail.com',
+  'fran-altes.com',
+  'barcelona, spain',
   'senior software engineer',
   'gartner',
   'python',
@@ -20,6 +23,14 @@ const TERMS = [
   'postgres',
   'github actions',
   'server components',
+];
+
+// Shown short on the page, so they must be clickable link annotations.
+const LINKS = [
+  'mailto:fran.altes@gmail.com',
+  'https://fran-altes.com/',
+  'https://linkedin.com/in/francesc-altes',
+  'https://github.com/suki60',
 ];
 
 // Each job must read title → dates → company → first bullet, and jobs in CV
@@ -61,6 +72,7 @@ const JOBS = [
 const data = new Uint8Array(await readFile(PDF_FILE));
 const pdf = await getDocument({ data }).promise;
 let text = '';
+const links: string[] = [];
 
 for (let i = 1; i <= pdf.numPages; i++) {
   const page = await pdf.getPage(i);
@@ -69,6 +81,10 @@ for (let i = 1; i <= pdf.numPages; i++) {
   for (const item of items) {
     if (!('str' in item)) continue;
     text += item.str + (item.hasEOL ? '\n' : ' ');
+  }
+
+  for (const annotation of await page.getAnnotations()) {
+    if (annotation.url) links.push(annotation.url);
   }
 }
 
@@ -96,6 +112,15 @@ for (const term of TERMS) {
     failed = true;
   } else {
     console.log(`✓ ${term}  ×${matches.length}`);
+  }
+}
+
+for (const link of LINKS) {
+  if (links.includes(link)) {
+    console.log(`✓ link: ${link}`);
+  } else {
+    console.log(`✗ link: ${link}  (found: ${links.join(', ') || 'none'})`);
+    failed = true;
   }
 }
 

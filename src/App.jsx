@@ -96,7 +96,11 @@ function App() {
               {contact.map((c) => (
                 <div className="flex items-center gap-2" key={c.label}>
                   <ContactIcon icon={c.icon} filled={c.filled} />
-                  <span>{c.label}</span>
+                  {c.href ? (
+                    <a href={c.href}>{c.label}</a>
+                  ) : (
+                    <span>{c.label}</span>
+                  )}
                 </div>
               ))}
             </div>

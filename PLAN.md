@@ -6,21 +6,17 @@ the text extractors those pipelines use (pdf.js, pdfminer, PyMuPDF, pypdf)
 and still look the same to a recruiter.
 Every step ends with `npm run generate-pdf` + the check script from step 1.
 
-## Phase 1 — Make the text layer readable
+## Phase 1 — Make the text layer readable ✅
 
-Inter text extracts in fragments (`py|t|hon`, `reac|t`, `t|vi|est`,
-`francesc alt|es`); Space Mono text extracts clean. Fix one thing at a time,
-stop at the first one that works.
+Done 2026-11-06. Inter text only splits in macOS PDFKit (`py|t|hon`,
+`francesc alt|es`). pdf.js, pdfminer, PyMuPDF and pypdf, the extractors agent
+pipelines use, all extract every word whole, so no font fix is needed.
 
-- [ ] 1. Add `scripts/check-pdf.ts`: extract the PDF text with `pdfjs-dist`
-      (stream order, like many ATS parsers), print it and fail if any key
-      term is not found whole (`python`, `react`, `vitest`, `github actions`,
-      `francesc altes`, `typescript`, `node.js`...).
-- [ ] 2. In `src/index.css` under `@media print`: `font-kerning: none` and
-      `font-feature-settings: "liga" 0, "calt" 0`. Rebuild + check.
-- [ ] 3. If still broken: self-host a static (non-variable) Inter `.woff2` in
-      `public/fonts`, drop the Google Fonts `<link>` for Inter. Rebuild + check.
-- [ ] 4. If still broken: swap the body font (visual change, decide together).
+- [x] 1. Add `scripts/check-pdf.ts`: extract the PDF text with `pdfjs-dist`
+      (stream order), print it, fail if a key term is split, and check each
+      job reads title → dates → company → first bullet, in CV order.
+- [x] 2–4. Skipped: kerning/ligature CSS, static Inter, body font swap. Not
+      needed for agent extractors.
 
 ## Phase 2 — Reading order
 

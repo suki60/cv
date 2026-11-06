@@ -38,8 +38,50 @@ function App() {
   return (
     <div className="p-4 bg-canvas print:p-0 print:bg-white">
       <div className="cv-scale-wrapper">
-        <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border flex overflow-hidden font-sans print:border-0">
-          <aside className="w-[260px] shrink-0 bg-lavender border-r-2 border-ink pt-9 pb-9 px-6 box-border">
+        <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border grid grid-cols-[260px_1fr] overflow-hidden font-sans print:border-0">
+          <main className="col-start-2 row-start-1 pt-9 px-8 pb-7 box-border min-w-0">
+            <div className="h-[120px] mb-6 flex flex-col items-center justify-center text-center">
+              <h1 className="font-sans font-black text-[40px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
+                francesc altes
+              </h1>
+              <div className="font-mono text-[13px] uppercase tracking-[0.06em]">
+                senior software engineer
+              </div>
+            </div>
+
+            <SectionLabel>profile</SectionLabel>
+            <p className="font-sans text-xs leading-[1.4] mb-5">{profile}</p>
+
+            <SectionLabel className="mb-[2px]">experience</SectionLabel>
+            {experience.map((e, i) => (
+              <div
+                className={`py-[6px] ${i === 0 ? 'border-t-0' : 'border-t border-ink/15'}`}
+                key={e.role + e.time}
+              >
+                <div className="flex justify-between items-baseline">
+                  <div className="font-sans font-bold text-[12.5px] lowercase">
+                    {e.role}
+                  </div>
+                  <div className="font-mono text-[9.5px] text-ink/50">
+                    {e.time}
+                  </div>
+                </div>
+                <div className="font-mono text-[9.5px] text-ink/55 mb-[3px]">
+                  {e.org} / {e.loc}
+                </div>
+                {e.bullets.map((b) => (
+                  <div className="flex gap-[6px] mb-[1px]" key={b}>
+                    <div className="shrink-0 w-1 h-1 bg-ink mt-[4px]" />
+                    <div className="font-sans text-[11px] leading-[1.35] text-ink/85">
+                      {b}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </main>
+
+          <aside className="col-start-1 row-start-1 bg-lavender border-r-2 border-ink pt-9 pb-9 px-6 box-border">
             <div className="relative w-[120px] mx-auto mb-6">
               <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
               <img
@@ -101,48 +143,6 @@ function App() {
               ))}
             </div>
           </aside>
-
-          <main className="flex-1 pt-9 px-8 pb-7 box-border min-w-0">
-            <div className="h-[120px] mb-6 flex flex-col items-center justify-center text-center">
-              <h1 className="font-sans font-black text-[40px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
-                francesc altes
-              </h1>
-              <div className="font-mono text-[13px] uppercase tracking-[0.06em]">
-                senior software engineer
-              </div>
-            </div>
-
-            <SectionLabel>profile</SectionLabel>
-            <p className="font-sans text-xs leading-[1.4] mb-5">{profile}</p>
-
-            <SectionLabel className="mb-[2px]">experience</SectionLabel>
-            {experience.map((e, i) => (
-              <div
-                className={`py-[6px] ${i === 0 ? 'border-t-0' : 'border-t border-ink/15'}`}
-                key={e.role + e.time}
-              >
-                <div className="flex justify-between items-baseline">
-                  <div className="font-sans font-bold text-[12.5px] lowercase">
-                    {e.role}
-                  </div>
-                  <div className="font-mono text-[9.5px] text-ink/50">
-                    {e.time}
-                  </div>
-                </div>
-                <div className="font-mono text-[9.5px] text-ink/55 mb-[3px]">
-                  {e.org} / {e.loc}
-                </div>
-                {e.bullets.map((b) => (
-                  <div className="flex gap-[6px] mb-[1px]" key={b}>
-                    <div className="shrink-0 w-1 h-1 bg-ink mt-[4px]" />
-                    <div className="font-sans text-[11px] leading-[1.35] text-ink/85">
-                      {b}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </main>
         </div>
       </div>
 

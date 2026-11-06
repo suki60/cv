@@ -27,10 +27,12 @@ far from their dates, companies and bullets.
 - [x] 5a. In `src/App.jsx`, replace `opacity-*` on text with colour alpha
       (`opacity-85` → `text-ink/85`, etc.) so the look stays the same and the
       text paints in DOM order. Rebuild + check (order checks must pass).
-- [ ] 5. In `src/App.jsx`, put `<main>` before `<aside>` in the DOM and keep the
-      sidebar on the left with `flex-row-reverse` (or `order-first`), so the
-      text layer starts with name, title, profile, experience.
-- [ ] 6. Check the visual layout is unchanged (web + PDF).
+- [x] 5. In `src/App.jsx`, put `<main>` before `<aside>` in the DOM and place
+      them with a grid (`col-start-*`), so the text layer starts with name,
+      title, profile, experience. `flex-row-reverse` didn't work: Chrome
+      paints reversed flex items in visual order.
+- [x] 6. Check the visual layout is unchanged: PDF rendered at 150 dpi,
+      0 pixels differ from the previous version.
 
 ## Phase 3 — Contact block (`src/data.jsx`)
 

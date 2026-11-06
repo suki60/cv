@@ -99,6 +99,14 @@ for (const term of TERMS) {
   }
 }
 
+// Parsers take the first line as the candidate's name.
+if (flat.trimStart().startsWith('francesc altes')) {
+  console.log('✓ order: name first');
+} else {
+  console.log(`✗ order: text starts with "${flat.trimStart().slice(0, 30)}"`);
+  failed = true;
+}
+
 let cursor = 0;
 let previous = 'start of text';
 let orderBroken = false;

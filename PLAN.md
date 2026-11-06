@@ -46,12 +46,13 @@ far from their dates, companies and bullets.
 
 ## Phase 4 — Keywords (`src/data.jsx` skills)
 
-- [ ] 11. `js, ts` → `javascript, typescript`
-- [ ] 12. `node` → `node.js`
-- [ ] 13. `router v7` → `react router v7`
-- [ ] 14. Add missing common terms: `html`, `css`, `ssr`, `web performance /
-      core web vitals`, `accessibility`, `rest`, `llm`, `microfrontends`,
-      `webgpu`. Keep the sidebar fitting on one page.
+- [x] 11–14. Skills are now 6 sections × 6, worded the way job ads write
+      them: `javascript`, `typescript`, `node.js`, `html/css`, `react router
+      v7`, `tailwind css`, `react testing library`, `postgresql`, `rest apis`,
+      `ci/cd (github actions)`, `ai agents`, `llm apps`. Dropped `go`,
+      `drizzle`, `agent harness`, `claude code`. `webgpu`, `llm` and
+      `microfrontends` are already in experience bullets; `ssr`, `core web
+      vitals` and `accessibility` move to Phase 5 bullets (only if true).
 
 ## Phase 5 — Content
 

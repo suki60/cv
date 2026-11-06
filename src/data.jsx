@@ -66,17 +66,31 @@ export const contact = [
 export const skills = [
   {
     cat: 'languages & runtimes',
-    items: ['js, ts', 'node', 'go', 'ruby', 'python'],
+    items: [
+      'html/css',
+      'javascript',
+      'typescript',
+      'node.js',
+      'python',
+      'ruby',
+    ],
   },
   {
     cat: 'libraries & frameworks',
-    items: ['react', 'next.js', 'router v7', 'tailwind', 'zod', 'zustand'],
+    items: [
+      'react',
+      'next.js',
+      'react router v7',
+      'tailwind css',
+      'zod',
+      'zustand',
+    ],
   },
   {
     cat: 'testing & tooling',
     items: [
       'vitest',
-      'testing library',
+      'react testing library',
       'playwright',
       'vite',
       'turborepo',
@@ -84,22 +98,29 @@ export const skills = [
     ],
   },
   {
-    cat: 'data & databases',
-    items: ['postgres', 'pgvector', 'redis', 'neon', 'drizzle', 'graphql'],
+    cat: 'data & apis',
+    items: ['postgresql', 'pgvector', 'redis', 'neon', 'graphql', 'rest apis'],
   },
   {
     cat: 'cloud & devops',
-    items: ['aws', 'vercel', 'github actions', 'datadog', 'sentry', 'docker'],
+    items: [
+      'aws',
+      'vercel',
+      'ci/cd (github actions)',
+      'docker',
+      'datadog',
+      'sentry',
+    ],
   },
   {
     cat: 'ai & agents',
     items: [
-      'claude code',
-      'openai agents sdk',
-      'agent harness',
-      'mcp',
+      'ai agents',
+      'llm apps',
       'rag',
+      'mcp',
       'evals',
+      'openai agents sdk',
     ],
   },
 ];

@@ -1,6 +1,9 @@
 # CV PDF fix plan
 
-Goal: the PDF sent to companies must parse cleanly in ATS and LLM screeners.
+Goal: optimise the CV for agents (ATS and LLM screeners) while keeping it
+appealing to human readers. The PDF sent to companies must parse cleanly in
+the text extractors those pipelines use (pdf.js, pdfminer, PyMuPDF, pypdf)
+and still look the same to a recruiter.
 Every step ends with `npm run generate-pdf` + the check script from step 1.
 
 ## Phase 1 — Make the text layer readable

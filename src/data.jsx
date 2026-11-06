@@ -80,7 +80,7 @@ export const skills = [
   },
   {
     cat: 'data & databases',
-    items: ['postgres', 'pgvector', 'redis', 'supabase', 'drizzle', 'graphql'],
+    items: ['postgres', 'pgvector', 'redis', 'neon', 'drizzle', 'graphql'],
   },
   {
     cat: 'cloud & devops',

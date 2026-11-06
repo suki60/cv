@@ -59,9 +59,9 @@ far from their dates, companies and bullets.
 - [x] 15. Latest role: `sabbatical year / independent` → `ai engineer` /
       `independent (sabbatical year)`, so agents read a current role title
       and the japan bullet still makes sense. Offwik stays first.
-- [ ] 16. Profile: open with a keyword line, e.g. "senior frontend /
-      full-stack engineer, 7+ yrs with react, next.js, typescript; now building
-      llm agents (rag, mcp, evals)", then the personal part.
+- [x] 16. Skipped: the profile keeps its original, personal wording. Role,
+      years, stack and ai focus are already in the header, job titles, dates,
+      skills and bullets; a keyword line cost more voice than it gained.
 - [ ] 17. Metrics: replace "drastic performance and conversion gains" with real
       numbers (conversion %, lcp ms); add scale to the app router migration
       and the monorepo bullets (pages, apps, build/deploy time).

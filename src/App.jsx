@@ -10,7 +10,7 @@ import {
 function SectionLabel({ children, className = 'mb-2' }) {
   return (
     <div
-      className={`font-mono text-[10px] tracking-[0.08em] opacity-55 uppercase ${className}`}
+      className={`font-mono text-[10px] tracking-[0.08em] text-ink/55 uppercase ${className}`}
     >
       [ {children} ]
     </div>
@@ -62,7 +62,7 @@ function App() {
             <SectionLabel>skills</SectionLabel>
             {skills.map((s) => (
               <div className="mb-[14px]" key={s.cat}>
-                <div className="font-mono text-[9px] opacity-60 uppercase">
+                <div className="font-mono text-[9px] text-ink/60 uppercase">
                   {s.cat}
                 </div>
                 <div className="font-sans text-xs leading-[1.5]">
@@ -77,10 +77,10 @@ function App() {
                 <div className="font-sans font-bold text-xs lowercase">
                   {ed.title}
                 </div>
-                <div className="font-mono text-[9px] opacity-60">
+                <div className="font-mono text-[9px] text-ink/60">
                   {ed.org} / {ed.time}
                 </div>
-                <div className="font-sans text-[11px] opacity-75 leading-[1.4] mt-[3px]">
+                <div className="font-sans text-[11px] text-ink/75 leading-[1.4] mt-[3px]">
                   {ed.desc}
                 </div>
               </div>
@@ -94,7 +94,7 @@ function App() {
                   key={l.name}
                 >
                   <span>{l.name}</span>
-                  <span className="font-mono text-[9px] opacity-55 uppercase">
+                  <span className="font-mono text-[9px] text-ink/55 uppercase">
                     {l.level}
                   </span>
                 </div>
@@ -125,17 +125,17 @@ function App() {
                   <div className="font-sans font-bold text-[12.5px] lowercase">
                     {e.role}
                   </div>
-                  <div className="font-mono text-[9.5px] opacity-50">
+                  <div className="font-mono text-[9.5px] text-ink/50">
                     {e.time}
                   </div>
                 </div>
-                <div className="font-mono text-[9.5px] opacity-55 mb-[3px]">
+                <div className="font-mono text-[9.5px] text-ink/55 mb-[3px]">
                   {e.org} / {e.loc}
                 </div>
                 {e.bullets.map((b) => (
                   <div className="flex gap-[6px] mb-[1px]" key={b}>
                     <div className="shrink-0 w-1 h-1 bg-ink mt-[4px]" />
-                    <div className="font-sans text-[11px] leading-[1.35] opacity-85">
+                    <div className="font-sans text-[11px] leading-[1.35] text-ink/85">
                       {b}
                     </div>
                   </div>

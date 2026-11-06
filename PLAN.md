@@ -20,6 +20,13 @@ pipelines use, all extract every word whole, so no font fix is needed.
 
 ## Phase 2 — Reading order
 
+All four extractors read the PDF stream in paint order: first everything
+without `opacity-*`, then everything with it. Job titles come out together,
+far from their dates, companies and bullets.
+
+- [x] 5a. In `src/App.jsx`, replace `opacity-*` on text with colour alpha
+      (`opacity-85` → `text-ink/85`, etc.) so the look stays the same and the
+      text paints in DOM order. Rebuild + check (order checks must pass).
 - [ ] 5. In `src/App.jsx`, put `<main>` before `<aside>` in the DOM and keep the
       sidebar on the left with `flex-row-reverse` (or `order-first`), so the
       text layer starts with name, title, profile, experience.

@@ -56,9 +56,9 @@ far from their dates, companies and bullets.
 
 ## Phase 5 — Content
 
-- [ ] 15. Latest role: `sabbatical year / independent` → e.g.
-      `ai engineer (independent)` with offwik first; keep the learning paths
-      and the japan bullet below.
+- [x] 15. Latest role: `sabbatical year / independent` → `ai engineer` /
+      `independent (sabbatical year)`, so agents read a current role title
+      and the japan bullet still makes sense. Offwik stays first.
 - [ ] 16. Profile: open with a keyword line, e.g. "senior frontend /
       full-stack engineer, 7+ yrs with react, next.js, typescript; now building
       llm agents (rag, mcp, evals)", then the personal part.

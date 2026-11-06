@@ -152,8 +152,8 @@ export const profile =
 
 export const experience = [
   {
-    role: 'sabbatical year',
-    org: 'independent',
+    role: 'ai engineer',
+    org: 'independent (sabbatical year)',
     loc: 'barcelona & japan',
     time: '2026',
     bullets: [

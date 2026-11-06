@@ -47,9 +47,9 @@ const LINKS = [
 // order, so an agent can tell which parts belong together.
 const JOBS = [
   [
-    'sabbatical year',
+    'ai engineer',
     '2026',
-    'independent / barcelona & japan',
+    'independent (sabbatical year) / barcelona & japan',
     'built offwik',
   ],
   [

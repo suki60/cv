@@ -1,6 +1,6 @@
 # Francesc Altes — CV
 
-A single-page, print-ready CV/resume for Francesc Altes, senior software engineer. Brutalist/monospace-accented design: sharp edges, offset "shadow" photo treatment, dense two-column layout (sidebar + main content), fixed to A4 proportions so it prints/exports to PDF as one page.
+A single-page, print-ready CV/resume for Francesc Altes, senior software engineer. Brutalist/monospace-accented design: sharp edges, bordered photo, dense two-column layout (sidebar + main content), fixed to A4 proportions so it prints/exports to PDF as one page.
 
 ## Stack
 

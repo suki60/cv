@@ -82,10 +82,9 @@ function App() {
           </main>
 
           <aside className="col-start-1 row-start-1 bg-lavender border-r-2 border-ink pt-9 pb-9 px-6 box-border">
-            <div className="relative w-[120px] mx-auto mb-6">
-              <div className="absolute top-2 left-2 w-full h-[120px] bg-ink" />
+            <div className="w-[120px] mx-auto mb-6">
               <img
-                className="relative block w-[120px] h-[120px] border-[3px] border-ink object-cover"
+                className="block w-[120px] h-[120px] border-[3px] border-ink object-cover"
                 src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                 alt="francesc altes"
               />

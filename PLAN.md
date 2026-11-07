@@ -67,7 +67,7 @@ far from their dates, companies and bullets.
       and lead conversion"; app router migration "of capterra.com"; monorepo
       "turborepo, aws → vercel, no per-app deploy pipelines". Add real
       numbers later if found (slack, hackathon slides, datadog, git history).
-- [ ] 18. "first official frontend engineer at the company" → "at getapp".
+- [x] 18. "first official frontend engineer at the company" → "at getapp".
 
 ## Phase 6 — Capitalization (optional, decide together)
 

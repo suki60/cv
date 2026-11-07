@@ -192,7 +192,7 @@ export const experience = [
     bullets: [
       'built and managed sem landing pages driving +10m eur/year revenue',
       'led a successful initiative to build a library embedding react into ruby templates — deep webpack/react work for single-instance loading and no repeated components',
-      'first official frontend engineer at the company — the team later grew to 3 to migrate getapp.com from jquery to react',
+      'first official frontend engineer at getapp — the team later grew to 3 to migrate getapp.com from jquery to react',
     ],
   },
   {

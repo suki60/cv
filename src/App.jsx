@@ -39,7 +39,7 @@ function App() {
     <div className="p-4 bg-canvas print:p-0 print:bg-white">
       <div className="cv-scale-wrapper">
         <div className="cv-page w-[794px] h-[1123px] bg-white text-ink border-2 border-ink box-border grid grid-cols-[260px_1fr] overflow-hidden font-sans print:border-0">
-          <main className="col-start-2 row-start-1 pt-9 px-8 pb-7 box-border min-w-0">
+          <main className="col-start-2 row-start-1 pt-9 px-8 print:pr-[36px] pb-7 box-border min-w-0">
             <div className="h-[120px] mb-6 flex flex-col items-center justify-center text-center">
               <h1 className="font-sans font-black text-[40px] leading-[0.92] tracking-[-0.03em] mb-2 lowercase">
                 francesc altes

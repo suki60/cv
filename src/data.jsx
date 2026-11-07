@@ -168,7 +168,7 @@ export const experience = [
     loc: 'barcelona',
     time: '2024 - 2025',
     bullets: [
-      'architected and led the next.js app router migration (server components, server actions, caching strategy), setting the technical standard for future work',
+      'architected and led the next.js app router migration of capterra.com (server components, server actions, caching strategy), setting the standard for future work',
       'owned ci/cd and deployment strategy (github actions, vercel), including auth (cognito) and e2e coverage (playwright) — on-call for incident response',
       'onboarded and mentored 6-8 engineers into the team, providing hands-on support and technical guidance',
     ],
@@ -179,8 +179,8 @@ export const experience = [
     loc: 'barcelona',
     time: '2022 - 2024',
     bullets: [
-      'led the rollout of my hackathon-winning project — converting getapp.com filters from links to spa — driving drastic performance and conversion gains',
-      'consolidated capterra.com microfrontends into a single monorepo, eliminating duplicated infra and deploy overhead (aws -> vercel)',
+      'led the rollout of my hackathon-winning project: rebuilt getapp.com category filters from full page reloads into an instant spa, improving page speed and lead conversion',
+      'consolidated capterra.com microfrontends into a single turborepo monorepo and moved hosting from aws to vercel, removing duplicated infra and per-app deploy pipelines',
       'owned observability and analytics setup (datadog/sentry), partnering closely with data analysts on gtm/ga event tracking',
     ],
   },

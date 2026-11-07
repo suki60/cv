@@ -62,9 +62,11 @@ far from their dates, companies and bullets.
 - [x] 16. Skipped: the profile keeps its original, personal wording. Role,
       years, stack and ai focus are already in the header, job titles, dates,
       skills and bullets; a keyword line cost more voice than it gained.
-- [ ] 17. Metrics: replace "drastic performance and conversion gains" with real
-      numbers (conversion %, lcp ms); add scale to the app router migration
-      and the monorepo bullets (pages, apps, build/deploy time).
+- [x] 17. No real numbers available, so no metrics. Bullets made specific
+      instead: filters "full page reloads → instant spa, improving page speed
+      and lead conversion"; app router migration "of capterra.com"; monorepo
+      "turborepo, aws → vercel, no per-app deploy pipelines". Add real
+      numbers later if found (slack, hackathon slides, datadog, git history).
 - [ ] 18. "first official frontend engineer at the company" → "at getapp".
 
 ## Phase 6 — Capitalization (optional, decide together)

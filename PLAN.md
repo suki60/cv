@@ -78,9 +78,11 @@ far from their dates, companies and bullets.
 
 ## Phase 7 — Final check
 
-- [ ] 20. `npm run generate-pdf`, run the check script: all terms whole, name
-      first, no sidebar text inside a job.
-- [ ] 21. Manual check: open the PDF in Preview, ⌘A ⌘C, paste into a text
-      editor, read it top to bottom.
-- [ ] 22. Visual check: one A4 page, nothing cut off.
-- [ ] 23. Commit `src/`, `scripts/` and `public/francesc-altes-cv.pdf`.
+- [x] 20. `npm run generate-pdf` + `npm run check-pdf`: 36 ✓, 0 ✗ (terms whole,
+      links, name first, every job reads title → dates → company → bullets).
+- [x] 21. Instead of a Preview copy (macOS PDFKit, not what agents use):
+      pymupdf, pdfminer and pypdf all start with "francesc altes" and keep
+      the key terms whole.
+- [x] 22. Visual check: one A4 page, nothing cut off (lowest text at 807 of
+      842 pt).
+- [x] 23. Everything committed and pushed phase by phase.

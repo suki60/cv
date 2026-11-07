@@ -71,9 +71,10 @@ far from their dates, companies and bullets.
 
 ## Phase 6 — Capitalization (optional, decide together)
 
-- [ ] 19. Use normal casing in `src/data.jsx` (Francesc Altes, Gartner, React,
-      Next.js, AWS) so parsers detect names, companies and titles. Remove the
-      `lowercase` classes in `App.jsx` or keep them for the web look only.
+- [x] 19. Skipped: the CV stays 100% lowercase, part of its style. CSS
+      casing is baked into the PDF text, so proper case would change the look.
+      The real parser problems are fixed (whole words, reading order, name
+      first, links); LLM screeners read lowercase fine.
 
 ## Phase 7 — Final check
 

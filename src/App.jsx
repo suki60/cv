@@ -69,8 +69,9 @@ function App() {
                 <div className="font-mono text-[9.5px] text-ink/55 mb-[3px]">
                   {e.org} / {e.loc}
                 </div>
-                {e.bullets.map((b) => (
-                  <div className="flex gap-[6px] mb-[1px]" key={b}>
+                {e.bullets.map((b, i) => (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: static list, never reordered
+                  <div className="flex gap-[6px] mb-[1px]" key={i}>
                     <div className="shrink-0 w-1 h-1 bg-ink mt-[4px]" />
                     <div className="font-sans text-[11px] leading-[1.35] text-ink/85">
                       {b}

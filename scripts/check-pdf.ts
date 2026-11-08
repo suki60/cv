@@ -41,6 +41,7 @@ const LINKS = [
   'https://fran-altes.com/',
   'https://linkedin.com/in/francesc-altes',
   'https://github.com/suki60',
+  'https://offwik.com/',
 ];
 
 // Each job must read title → dates → company → first bullet, and jobs in CV

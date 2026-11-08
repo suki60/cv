@@ -157,7 +157,11 @@ export const experience = [
     loc: 'barcelona & japan',
     time: '2026',
     bullets: [
-      'built offwik, a pwa that turns the phone into an offline rag agent over 238k wikipedia articles: webgpu llm and vector search, no server. plus other ai agents',
+      <>
+        built <a href="https://offwik.com">offwik.com</a>, a pwa that turns the
+        phone into an offline rag agent over 238k wikipedia articles: webgpu llm
+        and vector search, no server. plus other ai agents
+      </>,
       '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
       'cycled 3,200+ km across japan, solo, self-planned route',
     ],

@@ -163,7 +163,7 @@ export const experience = [
         pipeline, vector search and a webgpu llm, no server
       </>,
       '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
-      'cycled 3,200+ km across japan, solo, self-planned route',
+      'cycled 3,400+ km across japan, solo, self-planned route',
     ],
   },
   {

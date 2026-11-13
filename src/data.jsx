@@ -159,8 +159,8 @@ export const experience = [
     bullets: [
       <>
         built <a href="https://offwik.com">offwik.com</a>, a pwa that turns the
-        phone into an offline rag agent over 238k wikipedia articles: webgpu llm
-        and vector search, no server. plus other ai agents
+        phone into an offline rag agent over 238k wikipedia articles: data
+        pipeline, vector search and a webgpu llm, no server
       </>,
       '560+ hours, 14 master.dev learning paths completed: ai engineering, coding with ai, computer science, code architecture, cloud & devops, design to code...',
       'cycled 3,200+ km across japan, solo, self-planned route',
@@ -173,7 +173,7 @@ export const experience = [
     time: '2024 - 2025',
     bullets: [
       'architected and led the next.js app router migration of capterra.com (server components, server actions, caching strategy), setting the standard for future work',
-      'owned ci/cd and deployment strategy (github actions, vercel), including auth (cognito) and e2e coverage (playwright) — on-call for incident response',
+      'owned auth (aws cognito), ci/cd and deployments (github actions, vercel) and e2e coverage (playwright); on-call for incidents',
       'onboarded and mentored 6-8 engineers into the team, providing hands-on support and technical guidance',
     ],
   },
